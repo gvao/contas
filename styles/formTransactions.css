@@ -1,0 +1,39 @@
+.transactions-form__wrap {
+
+    &>form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+
+        .transactions-form__input {
+
+            padding: 8px 16px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+
+            &:focus {
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+            }
+
+            &[name="description"] {
+                flex-grow: 2;
+                flex-basis: 400px;
+            }
+        }
+
+        button[type="submit"] {
+            flex-basis: 100px;
+            background-color: cyan;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+    }
+}

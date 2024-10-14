@@ -1,0 +1,8 @@
+@import url('./reset.css');
+
+@import url('./transactions.css');
+@import url('./formTransactions.css');
+
+body {
+    padding: 16px;
+}
